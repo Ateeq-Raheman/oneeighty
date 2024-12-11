@@ -1,8 +1,8 @@
 app_name = "oneeighty"
 app_title = "oneeighty"
-app_publisher = "ateeq"
-app_description = "this app manages servicing part of the 180degrees"
-app_email = "ateeqraheman001195@gmail.com"
+app_publisher = "Ateeq"
+app_description = "prototype app"
+app_email = "ateeq@standardtouch.com"
 app_license = "mit"
 
 # Apps

@@ -1,6 +1,6 @@
 ## oneeighty
 
-this app manages servicing part of the 180degrees
+prototype app
 
 #### License
 
