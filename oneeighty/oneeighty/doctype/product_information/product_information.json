@@ -1,0 +1,87 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:PI-{####}",
+ "creation": "2024-12-11 09:11:19.264481",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "order_name",
+  "date_of_creation",
+  "column_break_kips",
+  "branch",
+  "contact_number",
+  "section_break_lenk",
+  "product_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "order_name",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Order Name"
+  },
+  {
+   "fieldname": "date_of_creation",
+   "fieldtype": "Date",
+   "label": "Date of Creation"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "column_break_kips",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Select",
+   "label": "Branch",
+   "options": "Gulbarga\nHyderabad\nMumbai\nDelhi"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Phone",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "section_break_lenk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Table",
+   "in_standard_filter": 1,
+   "label": "product Details",
+   "options": "Asset Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-11 09:46:53.787418",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Product Information",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

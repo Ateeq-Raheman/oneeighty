@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-12-11 09:15:16.435981",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "urgent",
+  "asset_item",
+  "category",
+  "item_pictures",
+  "column_break_qyjy",
+  "brand",
+  "color",
+  "column_break_vnnk",
+  "size",
+  "accessories"
+ ],
+ "fields": [
+  {
+   "fieldname": "asset_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset item"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Category",
+   "options": "Footwear\nHandbag\nclothing"
+  },
+  {
+   "fieldname": "item_pictures",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Item Pictures"
+  },
+  {
+   "default": "0",
+   "fieldname": "urgent",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Urgent"
+  },
+  {
+   "fieldname": "column_break_qyjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Brand",
+   "options": "Footwear\nHandbag\nclothing"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "in_list_view": 1,
+   "label": "Color",
+   "options": "Footwear\nHandbag\nclothing"
+  },
+  {
+   "fieldname": "column_break_vnnk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Size"
+  },
+  {
+   "fieldname": "accessories",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Accessories"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-12-11 09:35:53.489829",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "Asset Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
