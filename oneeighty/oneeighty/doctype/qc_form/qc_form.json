@@ -12,24 +12,24 @@
   "item_description",
   "check_and_accept_section",
   "yes",
+  "urgent",
   "no",
   "section_break_ccti",
   "job",
   "delivery_date",
-  "urgent",
   "column_break_bupk",
   "initial_picture_section",
   "initial_picture",
-  "column_break_mwnj",
   "initial",
+  "column_break_mwnj",
   "before_picture_section",
   "before_picture",
-  "column_break_wssz",
   "before",
+  "column_break_wssz",
   "after_picture_section",
   "after_picture",
-  "column_break_mxlc",
-  "after"
+  "after",
+  "column_break_mxlc"
  ],
  "fields": [
   {
@@ -65,7 +65,6 @@
    "fieldname": "yes",
    "fieldtype": "Check",
    "label": "yes",
-   "read_only_depends_on": "eval:(doc.no == 1)",
    "set_only_once": 1
   },
   {
@@ -73,7 +72,6 @@
    "fieldname": "no",
    "fieldtype": "Check",
    "label": "No",
-   "read_only_depends_on": "eval:doc.yes == 1",
    "set_only_once": 1
   },
   {
@@ -88,6 +86,7 @@
    "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "delivery_date",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -96,7 +95,7 @@
   },
   {
    "default": "0",
-   "depends_on": "eval:doc.no == 0",
+   "depends_on": "eval:doc.yes == 1",
    "fieldname": "urgent",
    "fieldtype": "Check",
    "label": "Urgent",
@@ -169,7 +168,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-11 13:05:18.723487",
+ "modified": "2024-12-11 13:26:39.044411",
  "modified_by": "Administrator",
  "module": "oneeighty",
  "name": "QC Form",
