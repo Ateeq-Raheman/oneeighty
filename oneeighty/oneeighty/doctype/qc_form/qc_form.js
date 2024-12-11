@@ -12,5 +12,11 @@ frappe.ui.form.on('QC Form', {
             frm.set_value('yes', 0);
             frm.set_value("urgent", 0);
         }
+    },
+    after_save: function (frm) {
+        frm.set_value("barcode", frm.doc.name);
+        frm.save();
     }
 });
+
+

@@ -1,7 +1,6 @@
 {
  "actions": [],
- "allow_rename": 1,
- "autoname": "format:QC-{job}-{delivery_date}",
+ "autoname": "format:QC - {####}",
  "creation": "2024-12-11 10:33:15.120777",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,6 +13,8 @@
   "yes",
   "urgent",
   "no",
+  "column_break_rwgz",
+  "barcode",
   "section_break_ccti",
   "job",
   "delivery_date",
@@ -164,11 +165,22 @@
    "fieldtype": "Image",
    "label": "After ",
    "options": "after_picture"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "in_list_view": 1,
+   "label": "Barcode",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_rwgz",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-11 13:26:39.044411",
+ "modified": "2024-12-11 14:09:07.161198",
  "modified_by": "Administrator",
  "module": "oneeighty",
  "name": "QC Form",
