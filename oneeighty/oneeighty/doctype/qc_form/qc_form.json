@@ -1,0 +1,195 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QC-{job}-{delivery_date}",
+ "creation": "2024-12-11 10:33:15.120777",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "sales_ord",
+  "asset",
+  "column_break_xaym",
+  "item_description",
+  "check_and_accept_section",
+  "yes",
+  "no",
+  "section_break_ccti",
+  "job",
+  "delivery_date",
+  "urgent",
+  "column_break_bupk",
+  "initial_picture_section",
+  "initial_picture",
+  "column_break_mwnj",
+  "initial",
+  "before_picture_section",
+  "before_picture",
+  "column_break_wssz",
+  "before",
+  "after_picture_section",
+  "after_picture",
+  "column_break_mxlc",
+  "after"
+ ],
+ "fields": [
+  {
+   "fieldname": "sales_ord",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sales Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "asset",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asset",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_xaym",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Small Text",
+   "label": "Item Description"
+  },
+  {
+   "fieldname": "check_and_accept_section",
+   "fieldtype": "Section Break",
+   "label": "Check And Accept"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "yes",
+   "read_only_depends_on": "eval:(doc.no == 1)",
+   "set_only_once": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No",
+   "read_only_depends_on": "eval:doc.yes == 1",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_ccti",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job",
+   "fieldtype": "Select",
+   "label": "Job",
+   "options": "Cleaning\nFCR\nStiching\nGlue\nResize\nSpot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "delivery_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Delivery Date",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.no == 0",
+   "fieldname": "urgent",
+   "fieldtype": "Check",
+   "label": "Urgent",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_bupk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial_picture_section",
+   "fieldtype": "Section Break",
+   "label": "Initial picture"
+  },
+  {
+   "fieldname": "initial_picture",
+   "fieldtype": "Attach",
+   "label": "Initial picture"
+  },
+  {
+   "fieldname": "column_break_mwnj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "initial",
+   "fieldtype": "Image",
+   "label": "Initial",
+   "options": "initial_picture"
+  },
+  {
+   "fieldname": "before_picture_section",
+   "fieldtype": "Section Break",
+   "label": "Before picture"
+  },
+  {
+   "fieldname": "before_picture",
+   "fieldtype": "Attach",
+   "label": "Before picture"
+  },
+  {
+   "fieldname": "column_break_wssz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "before",
+   "fieldtype": "Image",
+   "label": "Before",
+   "options": "before_picture"
+  },
+  {
+   "fieldname": "after_picture_section",
+   "fieldtype": "Section Break",
+   "label": "After Picture"
+  },
+  {
+   "fieldname": "after_picture",
+   "fieldtype": "Attach",
+   "label": "After picture "
+  },
+  {
+   "fieldname": "column_break_mxlc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "after",
+   "fieldtype": "Image",
+   "label": "After ",
+   "options": "after_picture"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-11 13:05:18.723487",
+ "modified_by": "Administrator",
+ "module": "oneeighty",
+ "name": "QC Form",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
